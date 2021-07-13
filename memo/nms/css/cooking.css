@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #030303;
+    color: antiquewhite;
+    font-family: source-han-sans-japanese;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:visited {
+    color: #6bba78;
+}
+
+:link {
+    color: #b1dbb8;
+}
+
+header {
+    background: linear-gradient(to bottom, #000, #077);
+}
+
+header h1 {
+    font-family: source-han-sans-japanese;
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    align-items: baseline;
+}
+
+main nav {
+    min-width: 20vw;
+    max-width: 25vw;
+    position: sticky;
+    top: 0;
+}
+
+div.article {
+    flex: auto;
+    font-family: source-han-sans-japanese;
+    font-weight: 400;
+}
+
+div.article section h2 {
+    font-family: source-han-sans-japanese;
+    font-weight: 200;
+    background: linear-gradient(to right, #011, #000);
+    border: solid #033 1px;
+    position: sticky;
+    top: 0;
+}
+
+div.article section h3 {
+    font-family: source-han-sans-japanese;
+    font-weight: 200;
+}
