@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/wallpaper.css">
+    <title>作った壁紙</title>
+    <script src="scripts/wallpaper.js"></script>
+    <script>
+      window.addEventListener('resize', context => {
+
+      });
+
+      window.addEventListener('load', (context) => {
+        const query = window.location.search.slice(1);
+        if (!query) return;
+        const file = query.split('&').filter(q => q.startsWith('img'))[0].split('=')[1];
+        const a = document.createElement('a');
+        a.setAttribute('href', `assets/wallpaper/wallpaper${file}.png`);
+        a.setAttribute('download', 'wallpaper.png');
+        // a.setAttribute('type', 'application/png');
+
+        const img = document.createElement('img');
+        img.className = 'main-image';
+        img.setAttribute('alt', '壁紙');
+        img.setAttribute('src', `assets/wallpaper/wallpaper${file}.png`);
+        a.appendChild(img);
+
+        const contentBlock = document.querySelector('div.content-block');
+        contentBlock.appendChild(a);
+      });
+    </script>
+    <style>
+      img.main-image {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>壁紙プレビュー</h1>
+    </header>
+    <main>
+      <div class="content-block">
+      </div>
+    </main>
+    <footer>
+      <div id="footer-notice">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+          <img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+        </a><br>
+        このページに掲載されている壁紙は、すべて<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">クリエイティブ・コモンズ 表示 - 非営利 - 改変禁止 4.0 国際 ライセンス</a>の下に提供されています。
+      </div>
+    </footer>
+  </body>
+</html>

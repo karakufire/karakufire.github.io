@@ -1,0 +1,31 @@
+header, footer {
+    background-color: #fff;
+}
+
+div.content-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+div.content-block div.content-element {
+    flex: auto;
+    text-align: center;
+    margin: 1vh 0;
+}
+
+img.content-image {
+    max-width: 240px;
+    min-width: 180px;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#footer-notice {
+    padding: 10px 10px 15px;
+}
