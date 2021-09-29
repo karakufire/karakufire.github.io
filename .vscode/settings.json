@@ -3,5 +3,13 @@
     "editor.suggest.insertMode": "replace",
     "gitlens.codeLens.scopes": ["document"],
     "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"],
+    "editor.tabSize": 2
   }
 }
