@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>mclfc</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/mclfc.css'>
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <h1>MCLFC - Minecraft Language File Comparator</h1>
+      <div class="e">
+        <h2>概要</h2>
+        <p>Minecraftの言語ファイルの言語間の比較を行います。</p>
+        <p>バージョン2.1現在、mclfcはコマンドラインツールであり、GUIは備わっていません。<br>コマンドプロンプトやパワーシェル等を用いて実行してください。</p>
+        <h2>使用方法</h2>
+        <code>mclfc [options] &lt;original&gt; &lt;translated&gt;</code>
+        <h3>Options</h3>
+        <ul>
+          <li><code>-V</code>, <code>--version</code> mclfcのバージョンを出力します</li>
+          <li><code>-o &lt;path&gt;</code>, <code>--output &lt;path&gt;</code> 比較結果のファイルを、指定したファイルパスに保存します。拡張子に関わらず出力形式はTSV(タブ区切りデータ)です。</li>
+          <li><code>-d</code>, <code>--differences</code> 行の違う、或いは両ファイルのどちらかに未掲載の翻訳キーのエントリのみを出力します。</li>
+          <li><code>-u</code>, <code>--untranslated</code> 元ファイルに存在し、翻訳ファイルに存在しない翻訳キーのエントリのみを出力します。</li>
+          <li><code>-h</code>, <code>--help</code> 使用方法を表示します。</li>
+        </ul>
+        <h2>ダウンロード</h2>
+        <a href="https://github.com/karakufire/MCLFC/releases">Githubのリリースページ</a>
+      </div>
+      <div class="e">
+        <figure>
+          <div><img src="assets/mclfc/preview.png"></div>
+          <div>例: Buildcraft 7.99.20での英語-日本語言語ファイルの比較</div>
+        </figure>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>

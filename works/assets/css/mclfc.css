@@ -1,0 +1,13 @@
+div.e {
+    max-width: 45%;
+    float: left;
+    margin-right: 8em;
+}
+
+code {
+    background-color: lightgray;
+}
+
+img {
+    max-height: 600px;
+}
