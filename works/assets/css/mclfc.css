@@ -1,11 +1,11 @@
 section {
-    margin: 0 4em;
+    margin: 0 4vw;
 }
 
 div.e {
     max-width: 45%;
     float: left;
-    margin-right: 8em;
+    margin-right: 4%;
 }
 
 code {
@@ -13,5 +13,5 @@ code {
 }
 
 img {
-    max-height: 600px;
+    max-width: 400px;
 }
