@@ -1,3 +1,53 @@
+body {
+    margin: 0 0 8rem 0;
+}
+
 section {
     margin: 0 4ch;
+}
+
+thead tr th {
+    position: relative;
+    border-bottom: solid 1px black;
+}
+
+thead tr th:first-child div {
+    width: 8em;
+}
+
+thead tr th:not(:first-child) div {
+    /* width: 3em; */
+}
+
+th, td {
+    padding: 0 1ch;
+    text-align: center;
+}
+
+td.allow {
+    color: green;
+}
+
+td.prohibit {
+    color: red;
+}
+
+div.desc {
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -100%;
+    left: 50%;
+    background: white;
+    border: thin black solid;
+    color: black;
+    z-index: 9999;
+    width: max-content !important;
+    white-space: nowrap;
+    /* max-width: 16em; */
+}
+
+thead>tr>th:hover div.desc {
+    visibility: visible;
 }
