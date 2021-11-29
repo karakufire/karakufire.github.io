@@ -12,6 +12,7 @@ div.content-block div.content-element {
     flex: auto;
     text-align: center;
     margin: 1vh 0;
+    min-width: 260px;
 }
 
 img.content-image {
