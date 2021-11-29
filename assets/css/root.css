@@ -1,0 +1,16 @@
+body {
+    margin: 0 0 8rem 0;
+}
+
+header {
+    padding: 0 2ch;
+    text-align: center;
+}
+
+body>section, body>main {
+    margin: 0 4ch;
+}
+
+body>section:not(:first-of-type) {
+    margin-top: 4ch;
+}
