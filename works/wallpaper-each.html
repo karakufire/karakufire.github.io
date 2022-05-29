@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../assets/css/root.css">
-    <link rel="stylesheet" href="assets/css/wallpaper.css">
+    <link rel="stylesheet" href="../assets/css/works/wallpaper.css">
     <title>作った壁紙</title>
-    <script src="scripts/wallpaper.js"></script>
+    <script src="../scripts/root.js"></script>
     <script>
       window.addEventListener('resize', context => {
 
@@ -16,14 +16,14 @@
         if (!query) return;
         const file = query.split('&').filter(q => q.startsWith('img'))[0].split('=')[1];
         const a = document.createElement('a');
-        a.setAttribute('href', `assets/wallpaper/wallpaper${file}.png`);
-        a.setAttribute('download', 'wallpaper.png');
+        a.setAttribute('href', `../assets/images/works/wallpaper/wallpaper${file}.png`);
+        a.setAttribute('download', `wallpaper${file}.png`);
         // a.setAttribute('type', 'application/png');
 
         const img = document.createElement('img');
         img.className = 'main-image';
         img.setAttribute('alt', '壁紙');
-        img.setAttribute('src', `assets/wallpaper/wallpaper${file}.png`);
+        img.setAttribute('src', `../assets/images/works/wallpaper/wallpaper${file}.png`);
         a.appendChild(img);
 
         const contentBlock = document.querySelector('div.content-block');
