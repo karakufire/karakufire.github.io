@@ -3,6 +3,7 @@ body {
 }
 
 header {
+    background: white;
     padding: 0 2ch;
     text-align: center;
 }
@@ -16,5 +17,10 @@ body>section:not(:first-of-type) {
 }
 
 footer {
-    padding: 0 2ch;
+    background: white;
+    position: fixed;
+    padding: 2ch 2ch;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
