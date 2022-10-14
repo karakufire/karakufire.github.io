@@ -40,6 +40,10 @@ div.desc {
     /* max-width: 16em; */
 }
 
+tbody>tr:nth-child(2n) {
+    background: rgba(0, 0, 0, 10%);
+}
+
 thead>tr>th:hover div.desc {
     visibility: visible;
 }
