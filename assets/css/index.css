@@ -1,4 +1,12 @@
+div.sns-link {
+    font-size: 1em;
+}
+
 img.icon {
-    max-width: 1em;
-    min-width: 32px;
+    max-height: 1em;
+    vertical-align: middle;
+}
+
+img.icon-twitter {
+    filter: brightness(0);
 }
