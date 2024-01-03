@@ -1,6 +1,6 @@
 thead tr th {
     position: relative;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px var(--var-bg-col);
 }
 
 thead tr th:first-child div {
@@ -31,9 +31,9 @@ div.desc {
     transform: translateX(-50%);
     top: 100%;
     left: 50%;
-    background: white;
-    border: thin black solid;
-    color: black;
+    background: var(--var-bg-col);
+    border: thin var(--var-fg-col) solid;
+    color: var(--var-fg-col);
     z-index: 9999;
     width: max-content !important;
     white-space: nowrap;

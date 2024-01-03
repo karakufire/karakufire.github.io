@@ -1,9 +1,26 @@
 body {
+    --var-bg-col: white;
+    --var-fg-col: black;
+    --var-bg-col-code: lightgray;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --var-bg-col: black;
+        --var-fg-col: white;
+        --var-bg-col-code: dimgray;
+    }
+}
+
+body {
     margin: 0;
+    background: var(--var-bg-col);
+    color: var(--var-fg-col);
 }
 
 header {
-    background: white;
+    background: var(--var-bg-col);
+    color: var(--var-fg-col);
     padding: 0 2ch;
     text-align: center;
 }
@@ -21,7 +38,8 @@ body>section:not(:first-of-type) {
 }
 
 footer {
-    background: white;
+    background: var(--var-bg-col);
+    color: var(--var-fg-col);
     position: fixed;
     padding: 2ch 2ch;
     right: 0;

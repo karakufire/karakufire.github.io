@@ -9,7 +9,7 @@ div.e {
 }
 
 code {
-    background-color: lightgray;
+    background-color: var(--var-bg-col-code);
 }
 
 img {
